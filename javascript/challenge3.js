@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Challenge3 - Eva Karelse</title>
-  <link rel="stylesheet" type="text/css" href="styles/challenge3.css">
-  <script type="text/javascript" src="javascript/challenge3.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js">
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3lAfwIEK5TO_UOCm9mSNwduiA0-NjdFA&callback=initMap">">
-</script>
-<script>
-  var map;
+ var map;
   var geoJSON;
   var request;
   var gettingData = false;
@@ -261,11 +249,3 @@ function setMarkerTwo() {
   
 }
   
-</script>
-</head>
-<body>
-
-<div id="map-canvas"></div>
-
-</body>
-</html>

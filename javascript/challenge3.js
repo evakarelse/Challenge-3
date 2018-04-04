@@ -1,4 +1,4 @@
- var map;
+  var map;
   var geoJSON;
   var request;
   var gettingData = false;
@@ -248,4 +248,3 @@ function setMarkerTwo() {
   
   
 }
-  

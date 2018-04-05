@@ -54,7 +54,7 @@
   // Make the weather request
   var getWeather = function(northLat, eastLng, southLat, westLng) {
     gettingData = true;
-    var requestString = "http://api.openweathermap.org/data/2.5/box/city?bbox="
+    var requestString = "https://api.openweathermap.org/data/2.5/box/city?bbox="
                         + westLng + "," + northLat + "," //left top
                         + eastLng + "," + southLat + "," //right bottom
                         + map.getZoom()
@@ -93,7 +93,7 @@
         windSpeed: weatherItem.wind.speed,
         windDegrees: weatherItem.wind.deg,
         windGust: weatherItem.wind.gust,
-        icon: "http://openweathermap.org/img/w/"
+        icon: "https://openweathermap.org/img/w/"
               + weatherItem.weather[0].icon  + ".png",
         coordinates: [weatherItem.coord.Lon, weatherItem.coord.Lat]
       },
@@ -158,9 +158,9 @@
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading">Philadelphia</h1>'+
             '<div id="bodyContent">'+
-            
-      '<p><b>Aantal inwoners</b> 1.567.442  inwoners<br /> ' +
-            '<b>Hoogte landingsplek</b> 124 meter<br /></p> '+
+
+            '<p><b>Aantal inwoners</b> 1.567.442inwoners<br /> ' +
+            '<b>Hoogte landingsplek</b> 123 meter<br /> '+
             '<b>Landingsplek </b>aangeraden<br /></p>'+
             '</div>'+
             '</div>';

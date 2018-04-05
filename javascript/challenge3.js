@@ -148,8 +148,9 @@
             '<h1 id="firstHeading" class="firstHeading">Londen</h1>'+
             '<div id="bodyContent">'+
             
-      '<p><b>Aantal inwoners</b> 8.674.713 inwoners<br /> ' +
-            '<b>Hoogte landingsplek</b> 245 meter<br /></p> '+
+             '<p><b>Aantal inwoners</b> 8.674.713 inwoners<br /> ' +
+            '<b>Hoogte landingsplek</b> 245 meter<br /> '+
+            '<b>Landingsplek </b>aangeraden<br /></p>'+
             '</div>'+
             '</div>';
       
@@ -227,27 +228,9 @@ function setMarkerOne() {
   };
   
   var marker = new google.maps.Marker({
-    position: {lat: 28.5728722, lng: -80.6489808},
+    position: {lat: 28.5728722, lng:  -80.6489808},
     map: map,
     icon: icon,
-    title: 'Hello World!'
+    title: 'Kennedy Space Center'
   }); 
-}
-
-
-
-function setMarkerTwo() {
-  var icon = {
-    url: 'afbeeldingen/logonasa.png',
-    scaledSize: new google.maps.Size(70, 60) // scaled size
-  };
-  
-  var marker = new google.maps.Marker({
-    position: {lat: 28.396837, lng: -80.605659},
-    map: map,
-    icon: icon,
-    title: 'Hello World!'
-  });
-  
-  
 }

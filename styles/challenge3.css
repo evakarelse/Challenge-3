@@ -11,3 +11,20 @@ html, body{
 .gm-style-iw {
       text-align: center;
     }
+ @media only screen  and (orientation : landscape) {
+
+
+}
+
+/*tablet breakpoint*/
+
+@media only screen and (min-width: 600px) {
+
+
+}
+
+/*Desktop breakpoint*/
+@media only screen and (min-width: 1200px) {
+
+    
+}

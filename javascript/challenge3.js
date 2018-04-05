@@ -6,8 +6,87 @@
   function initialize() {
     var mapOptions = {
       zoom: 4,
-      center: new google.maps.LatLng(50,-50)
-    
+      center: new google.maps.LatLng(50,-50),
+      styles: [
+            {elementType: 'geometry', stylers: [{color: '#1d2c4d'}]},
+      {elementType: 'labels.text.stroke', stylers: [{color: '#1a3646'}]},
+      {elementType: 'labels.text.fill', stylers: [{color: '#8ec3b9'}]},
+      {
+        featureType: 'administrative.locality',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#8ec3b9'}]
+      },
+      {
+        featureType: 'poi',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#6f9ba5'}]
+      },
+      {
+        featureType: 'poi.park',
+        elementType: 'geometry',
+        stylers: [{color: '#023e58'}]
+      },
+      {
+        featureType: 'poi.park',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#3C7680'}]
+      },
+      { // little road color
+        featureType: 'road',
+        elementType: 'geometry',
+        stylers: [{color: '#304a7d'}]
+      },
+      { // border road
+        featureType: 'road',
+        elementType: 'geometry.stroke',
+        stylers: [{color: '#99ffff'}]
+      },
+      { // text color
+        featureType: 'road',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#98a5be'}]
+      },
+      { // big roads color
+        featureType: 'road.highway',
+        elementType: 'geometry',
+        stylers: [{color: '#E87D0C'}]
+      },
+      { // border big roads color
+        featureType: 'road.highway',
+        elementType: 'geometry.stroke',
+        stylers: [{color: '#334e87'}]
+      },
+      { // text color big road
+        featureType: 'road.highway',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#f3d19c'}]
+      },
+      { //public transport road
+        featureType: 'transit',
+        elementType: 'geometry',
+        stylers: [{color: '#FF0000'}]
+      },
+      {//text color
+        featureType: 'transit.station',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#CFFF7D'}]
+      },
+      { //color water
+        featureType: 'water',
+        elementType: 'geometry',
+        stylers: [{color: '#0e1626'}]
+      },
+      {
+        featureType: 'water',
+        elementType: 'labels.text.fill',
+        stylers: [{color: '#515c6d'}]
+      },
+      {
+        featureType: 'water',
+        elementType: 'labels.text.stroke',
+        stylers: [{color: '#17263c'}]
+      }
+    ]
     };
     map = new google.maps.Map(document.getElementById("map-canvas"),
         mapOptions);

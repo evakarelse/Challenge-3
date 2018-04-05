@@ -130,15 +130,15 @@
       map.data.remove(feature);
     });
   
-  var contentEindhoven = '<div id="content">'+
+  var infoDenHaag = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Eindhoven</h1>'+
+            '<h1 id="firstHeading" class="firstHeading">Den Haag</h1>'+
             '<div id="bodyContent">'+
             
-      '<p><b>Aantal inwoners</b> 227.100 inwoners<br /> ' +
-            '<b>Hoogte landingsplek</b> 5 meter<br /> '+
-            '<b>Landingsplek aangeraden</b><br /></p>'+
+      '<p><b>Aantal inwoners</b> 526.439 inwoners<br /> ' +
+            '<b>Hoogte landingsplek</b> 1 meter<br /> '+
+            '<b>Landingsplek </b>afgeraden<br /></p>'+
             '</div>'+
             '</div>';
       
@@ -153,14 +153,15 @@
             '</div>'+
             '</div>';
       
-  var contentNewYork = '<div id="content">'+
+  var InfoPhiladelphia = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">New York</h1>'+
+            '<h1 id="firstHeading" class="firstHeading">Philadelphia</h1>'+
             '<div id="bodyContent">'+
             
-      '<p><b>Aantal inwoners</b> 8.550.405 inwoners<br /> ' +
+      '<p><b>Aantal inwoners</b> 1.567.442  inwoners<br /> ' +
             '<b>Hoogte landingsplek</b> 124 meter<br /></p> '+
+            '<b>Landingsplek </b>aangeraden<br /></p>'+
             '</div>'+
             '</div>';
       
@@ -168,8 +169,8 @@
       // Array of markers
       var markers = [
         {
-          coords:{lat:51.4266279,lng:5.4813194},
-          content: contentEindhoven
+          coords:{lat:52.0704978,lng:4.3006999},
+          content: infoDenHaag
       
         },
         {
@@ -177,8 +178,8 @@
           content:contentLonden
         },
         {
-          coords:{lat:40.730610,lng:-73.935242},
-      content:contentNewYork
+          coords:{lat:39.952583,lng:-75.165222},
+      content:InfoPhiladelphia
         }
       ];
 

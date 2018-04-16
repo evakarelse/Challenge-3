@@ -113,7 +113,6 @@
       infowindow.open(map);
     });
   setMarkerOne();
-  setMarkerTwo();
   }
   var checkIfDataRequested = function() {
     // Stop extra requests being sent
